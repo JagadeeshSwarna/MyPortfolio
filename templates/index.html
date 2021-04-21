@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -11,7 +12,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
       <div class="container">
-        <a class="navbar-brand " href="#"><h3 class="brandlogo">Jagadeesh</h3></a>
+        <a class="navbar-brand" href="#"><h3 class="brandlogo pt-2">Jagadeesh</h3></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,6 +29,7 @@
         </div>
       </div>
     </nav>
+<!--    end of navbar-->
     <div class="banner-section-bg-container d-flex justify-content-center flex-column">
       <div class="text-center">
         <h1 class="banner-heading mb-3">Hi i'm Jagadeesh Swarna</h1>
@@ -35,21 +37,21 @@
         <button class="custom-outline-button" onclick="document.getElementById('projectsSection').scrollIntoView();">See My Work</button>
       </div>
     </div>
-    <div class="wcu-section pt-5 pb-5" id="aboutSection">
+    <div class="about-section pt-5 pb-5" id="aboutSection">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="wcu-section-heading">About Me</h1>
+            <h1 class="about-section-heading">About Me</h1>
             <div class="divider-grey"></div>
 
             <br>
-            <p class="wcu-section-description">
+            <p class="about-section-description">
               Python Developer
             </p>
             <br>
           </div>
           <div class="col-12">
-            <div class="col-12 col-lg-12 wcu-card p-3 mb-3">
+            <div class="col-12 col-lg-12 about-card p-3 mb-3">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-1"></div>
@@ -57,21 +59,21 @@
                     <div class="text-center mt-5">
                       <img
                         src="https://www.dropbox.com/s/ssl6l5dboyy56uf/roundimg.jpg?raw=1"
-                        class="wcu-card-image"
+                        class="about-card-image"
                       />
                     </div>
                   </div>
 
                   <div class="col-12 col-lg-8 mt-5">
-                    <p class="wcu-card-description">
+                    <p class="about-card-description">
                       Hi, my name is Jagadeesh Swarna, I work as a software engineer for infosys Ltd.<br>
                       I hold a bachelor's degree in computer science and engineering (Hindustan University, Chennai).
                     </p>
-                    <p class="wcu-card-description">
+                    <p class="about-card-description">
                       Since I was young, I have always enjoyed to solve puzzles. So that’s how I look at big data sets:
                       to me it is one big puzzle I want to solve. Finding patterns nobody else sees is the challenge to me.
                     </p>
-                    <p class="wcu-card-description">
+                    <p class="about-card-description">
                       I like to travel. I believe travelling gives you a new perspective to everything.<br>
                       You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.
                     </p>
@@ -84,6 +86,8 @@
         </div>
       </div>
     </div>
+<!--    end of about-->
+<!--    start of projects-->
     <div class="explore-menu-section pt-5 pb-5 " id="projectsSection">
       <div class="container">
         <div class="row">
@@ -91,80 +95,261 @@
             <h1 class="menu-section-heading">Projects</h1>
             <div class="divider-grey"></div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4 mt-5">
+          <!--project 1-->
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/c07fnke8ve83slt/pgnew.jpg?raw=1"
-                class="menu-item-image w-100"
+                class="menu-item-image_pg w-60"
               />
-              <h1 class="menu-card-title">RTDC-(Real time data Connect): A data engineering project for P&G</h1>
-              <a href="" class="menu-item-link">
-                View more
-              </a>
+              <h1 class="menu-card-title">RTDC-(Real time data Connect)</h1>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#myModal1">view info</button>
+              </div>
+
             </div>
           </div>
-          <div class="col-12 col-md-12 col-lg-4 mt-5">
+          <!--project 2-->
+          <div class="col-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/29k1pkorv38t5ba/Plant-Iot.png?raw=1"
                 class="menu-item-image w-100"
               />
               <h1 class="menu-card-title">IoT based Plant Monitoring System</h1>
-              <a href="" class="menu-item-link">
-                View more
-              </a>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#myModal2">view info</button>
+              </div>
+
+
             </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <!--project 3-->
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/4ootzmofy7j95qs/flipkartreviews.png?raw=1"
-                class="menu-item-image w-100"
+                class="menu-item-image w-90"
               />
               <h1 class="menu-card-title">Flipkart product review analysis</h1>
-              <a href="" class="menu-item-link">
-                View All
-              </a>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#myModal3">view info</button>
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <!--project 4-->
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/99pv2a6whjz2cnk/Picture1%20%281%29.png?raw=1"
                 class="menu-item-image w-100"
               />
-              <h1 class="menu-card-title">Customer food ordering patterns and targeted advertising</h1>
-              <a href="" class="menu-item-link">
-                View All
-              </a>
+              <h1 class="menu-card-title">Food ordering patterns for targeted advertising</h1>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#mymodal1">view project</button>
+              </div>
+
             </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <!--project 5-->
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/4ootzmofy7j95qs/flipkartreviews.png?raw=1"
                 class="menu-item-image w-100"
               />
               <h1 class="menu-card-title">Flipkart product review analysis</h1>
-              <a href="" class="menu-item-link">
-                View All
-              </a>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#mymodal1">view project</button>
+              </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <!--project 6-->
+          <div class="col-sm-12 col-md-6 col-lg-4 mt-3">
             <div class="shadow menu-item-card p-3 mb-3">
               <img
                 src="https://www.dropbox.com/s/4ootzmofy7j95qs/flipkartreviews.png?raw=1"
                 class="menu-item-image w-100"
               />
               <h1 class="menu-card-title">Flipkart product review analysis</h1>
-              <a href="" class="menu-item-link">
-                View All
-              </a>
+              <div class="text-center">
+                <button type="button" class="btn btn-info btn-sm center" data-toggle="modal" data-target="#mymodal1">view project</button>
+              </div>
             </div>
           </div>
          </div>
       </div>
     </div>
+    <!-- Modal1 --------add each modal for each project-->
+              <div class="modal fade" id="myModal1" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">RTDC-(Real time data Connect)</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                      <img
+                        src="https://www.dropbox.com/s/c07fnke8ve83slt/pgnew.jpg?raw=1"
+                        class="menu-item-image_pg w-60"
+                      />
+                      <p class="mt-3">The main aim of the project is to process huge volumes of data
+                      generated by Procter & Gamble(P&G). The main source of data is from the distributors in the form of
+                      sales, inventory, ordercuts at store level.</p>
+                      <p>Python is used for data wrangling tasks and followed by data quality checks on the transformed data
+                          for any data discrepancies occurred due to wrangling techniques. Eventually based on the processed data reports are generated.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Modal2 -->
+              <div class="modal fade" id="myModal2" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">IoT based plant monitoring system</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                      <img
+                        src="https://www.dropbox.com/s/29k1pkorv38t5ba/Plant-Iot.png?raw=1"
+                        class="menu-item-image w-50"
+                      />
+                      <p class="mt-3">Most
+                        of the people loves to grow plants at home, but due to their hectic work schedule they find it very tough to take care of the garden
+                        The only solution to this problem is smart monitoring of the plant growth by modernizing the
+                            current traditional methods of gardening.</p>
+                      <p>The system we developed will take care of the crop development with low resource utilization by providing an automatic
+                          watering system to the user. The proposed system
+                            will work based on the information send by the sensors and so growth of the plant can be
+                            estimated. RaspberryPi is used for the implementation of this system where data is stored in the cloud. </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Modal3 -->
+              <div class="modal fade" id="myModal3" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">Flipkart product review analysis</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                        <img
+                            src="https://www.dropbox.com/s/4ootzmofy7j95qs/flipkartreviews.png?raw=1"
+                            class="menu-item-image w-50"
+                          />
+                      <p class="mt-3">In this modern world we can get everything over internet but especially in the retail sector without proper analysis we cannot purchase a product.
+                      Customers can get easily tricked by the fraudsters. So, product reviews matter a lot when it comes to E-commerce.</p>
+                      <p>
+                          The project i developed will ease the process of analyzing thousands of reviews for a product. Initially for the selected product this system will scrape the reviews from the flipkart.
+                          Later, using several data wrangling techniques useful data is obtained from the reviews and presented to the user in the form of pyplot graphs.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Modal4 -->
+              <div class="modal fade" id="myModal4" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">Modal Header</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Modal5 -->
+              <div class="modal fade" id="myModal5" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">Modal Header</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!-- Modal6 -->
+              <div class="modal fade" id="myModal6" >
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+
+                      <h4 class="modal-title ml-auto mr-auto">Modal Header</h4>
+
+                    </div>
+                    <div class="modal-body text-center">
+                      <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info ml-auto mr-auto" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!--    end of projects-->
+
+    <a href="#" class="up-btn page-scroll">
+      <i class="fa fa-chevron-up" aria-hidder="true"></i>
+    </a>
+<!--    Start of footer-->
+    <div class="footer-section pt-5 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="brandlogofoot">Jagadeesh Swarna</h1>
+            <h1 class="footer-section-mail-id">swarna.jagadesh@gmail.com</h1>
+            <p class="footer-section-address">
+              Hyderabad, India.
+            </p>
+          </div>
+        </div>
+        <footer class="text-center text-white">&copy; Copyright 2021 Jagadeesh Swarna</footer>
+      </div>
+    </div>
+  <!-- Modal -->
+
   </body>
 </html>
