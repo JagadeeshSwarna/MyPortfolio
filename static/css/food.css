@@ -37,7 +37,8 @@ color-adjust: exact;
   color-adjust: exact;
 }
   #navItem2:hover,#navItem1:hover,#navItem3:hover,#navItem4:hover {
-  color: white;
+  background: rgba(255, 255, 255, 0.30);
+  transition: .3s;
   }
 .banner-section-bg-container{
   background-image: url("https://www.dropbox.com/s/q4trzj8zt1sp7lg/black2.jpeg?raw=1");
@@ -111,9 +112,13 @@ font-weight:bold;
   height: 124px;
   border-radius: 100px;
   margin:auto;
+  transition-property: border-radius;
+  transition-duration: .5s,3s;
 }
 .about-card-image:hover {
-        transform: scale(1.2);
+
+        border-radius: 10px;
+
 }
 .about-card-title {
   color: #323f4b;
@@ -130,10 +135,13 @@ font-weight:bold;
 
 }
 .explore-menu-section {
-  background-color: white;
+  background-color: #f5fff5 ;
+}
+#projectsSection{
+padding-top:100px;
 }
 .menu-item-card{
-    background-color:#edfcfb;
+    background-color:#fcf7f7;
 }
 .menu-section-heading {
   color: #183b56;
@@ -149,9 +157,7 @@ font-weight:bold;
   border-radius: 16px;
   background-color:white;
 }
-.menu-item-image:hover .menu-card-  title{
-    display: hidden;
-}
+
 .menu-item-image_pg {
     height:180px;
     margin-left:auto;
@@ -177,8 +183,52 @@ margin-right:auto;
   border-radius: 16px;
 }
 .menu-item-card:hover {
-        transform: scale(1.12);
+        transform: scale(1.02);
 }
+
+/*expertise css*/
+.center-ec {
+    margin:auto;
+}
+.expert-card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.expert-card {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.expert-card:hover {
+  transform: rotateY(180deg);
+  border-radius: 100px;
+
+}
+.expert-card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.expert-card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  font-family: "Roboto";
+  font-weight:bold;
+  text-align: center;
+  transform: rotateY(180deg);
+  border-radius: 6px;
+}
+
+/* footer css */
 .brandlogofoot{
 font-family : myFirstFont;
 color: white;
