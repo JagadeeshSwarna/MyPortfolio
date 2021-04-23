@@ -2,12 +2,16 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='css/food.css') }}">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foodoptimized.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/food.css') }}">
+
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top">
@@ -24,13 +28,13 @@
             </a>
             <a class="nav-link" href="#projectsSection" id="navItem2">Projects</a>
             <a class="nav-link" href="#expertiseSection" id="navItem3">Expertise</a>
-            <a class="nav-link" href="#" id="navItem4">Contact</a>
+            <a class="nav-link" href="#ContactSection" id="navItem4">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 <!--    end of navbar-->
-    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column" id = 'topSection'>
       <div class="text-center">
         <h1 class="banner-heading mb-3">Hi i'm Jagadeesh Swarna</h1>
         <p class="banner-caption mb-4">A software engineer at infosys Ltd. passionate about programming and big data.</p>
@@ -39,11 +43,11 @@
     </div>
 <!--    end of banner-->
     <div class="about-section pt-5 pb-5" id="aboutSection" >
-      <div class="container mt-5">
+      <div class="container mt-5 mb-5">
         <div class="row mt-5">
           <div class="col-sm-12">
             <h1 class="about-section-heading">About Me</h1>
-            <div class="divider-grey"></div>
+            <div class="divider-grey mb-4"></div>
 
 
             <br>
@@ -249,6 +253,7 @@
                       <h4 class="modal-title ml-auto mr-auto">Flipkart product review analysis</h4>
 
                     </div>
+
                     <div class="modal-body text-center">
                         <img
                             src="https://www.dropbox.com/s/4ootzmofy7j95qs/flipkartreviews.png?raw=1"
@@ -328,9 +333,9 @@
                 </div>
               </div>
 <!--    end of projects-->
-    <div id = "expertiseSection"></div>
-    <div class="about-section pt-5 pb-5" >
-      <div class="container">
+
+    <div class="about-section pt-5 pb-5" id = "expertiseSection" >
+      <div class="container mt-5">
         <div class="row">
           <div class="col-12">
             <h1 class="about-section-heading">Expertise</h1>
@@ -355,7 +360,7 @@
           <div class="col-sm-6 col-md-4 col-lg-3 mt-4 center-ec">
             <div class="expert-card-container center-ec">
               <div class="expert-card">
-                <div class="side"><img src="https://www.dropbox.com/s/idn37s3tl4sv6eq/Web_Photo_Editor%20%281%29.jpg?raw=1" class="w-100" alt="Web Scraping"></div>
+                <div class="side"><img src="https://www.dropbox.com/s/2hf07zvyb4hb2qx/Web_Photo_Editor%20%281%29.jpg?raw=1" class="w-100" alt="Web Scraping"></div>
                 <div class="side back">Web Scraping</div>
               </div>
             </div>
@@ -376,23 +381,94 @@
               </div>
             </div>
           </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mt-4 center-ec">
+            <div class="expert-card-container center-ec">
+              <div class="expert-card">
+                <div class="side"><img src="https://www.dropbox.com/s/3yhr6bcw6kkdsf1/Eda%20Optimized.jpg?raw=1" class="w-100" alt="EDA"></div>
+                <div class="side back">Exploratory Data Analysis</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end of expertise section -->
+    <div class="follow-us-section pt-5 pb-5" id="ContactSection">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="follow-us-section-heading">Contact Me</h1>
+             <p class="follow-section-description text-center pt-5">
+                        <i>Feel free to get in touch. Cheers!</i>
+                      </p>
+          </div>
 
+          <div class="col-12">
+            <div class="d-flex flex-row justify-content-center">
+              <a href="https://www.linkedin.com/in/jagadeesh-swarna-7b7159159/" target="_blank">
+                <div class="follow-us-icon-container">
+                  <i class=" icon fa fa-linkedin" id="icon"></i>
+                </div>
+              </a>
+              <a href="mailto:swarna.jagadesh@gmail.com">
+                <div class="follow-us-icon-container">
+                  <i class="icon fa fa-envelope" id="icon"></i>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/_jagadeesh_chowdary_/">
+                <div class="follow-us-icon-container">
+                  <i class="icon fa fa-instagram" id="icon"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <p class="text-center text-info pt-5">
+                        Resume
+                      </p>
+            <a href="https://www.dropbox.com/s/1nxg1ixl21bt8mo/20210420_145703_0000-converted.pdf?raw=1" class="button">
+              <img src="https://www.dropbox.com/s/fcuxyra2d75u0gh/Resume.jpg?raw=1" class="resume p-2" alt="Resume">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--    Start of footer-->
     <div class="footer-section pt-3 pb-2">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h1 class="brandlogofoot">Jagadeesh Swarna</h1>
-            <h1 class="footer-section-mail-id"> <i>Mail me at: </i>swarna.jagadesh@gmail.com</h1>
+            <h1 class="brandlogofoot">Jagadeesh</h1>
+            <h1 class="footer-section-mail-id">swarna.jagadesh@gmail.com</h1>
           </div>
+
         </div>
-        <footer class="text-center text-white">&copy; Copyright 2021 Jagadeesh Swarna</footer>
+        <footer class="text-center text-white">&copy; 2021 Jagadeesh Swarna</footer>
+        <button id="move-top" onclick="document.getElementById('topSection').scrollIntoView();"><i class="fa fa-angle-double-up"></i></button>
       </div>
+
     </div>
-  <!-- Modal -->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("move-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
   </body>
 </html>
