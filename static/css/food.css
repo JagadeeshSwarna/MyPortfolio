@@ -136,23 +136,23 @@ font-weight:bold;
   text-align: left;
 
 }
-.explore-menu-section {
+.explore-expertise-section {
   background-color: #f5fff5 ;
 }
 #projectsSection{
 padding-top:100px;
 }
-.menu-item-card{
+.expertise-item-card{
     background-color:#fcf7f7;
 }
-.menu-section-heading {
+.expertise-section-heading {
   color: #183b56;
   font-family: "Roboto";
   font-size: 28px;
   font-weight: 700;
   text-align:center;
 }
-.menu-item-image {
+.expertise-item-image {
   object-fit: cover;
   height: auto;
   width:100%;
@@ -160,14 +160,14 @@ padding-top:100px;
   background-color:white;
 }
 
-.menu-item-image_pg {
+.expertise-item-image_pg {
     height:180px;
     margin-left:auto;
     margin-right:auto;
     display:block;
     border-radius:100%;
 }
-.menu-card-title {
+.expertise-card-title {
   color: #323f4b;
   font-family: "Roboto";
   font-size: 100%;
@@ -180,11 +180,11 @@ padding-top:100px;
 margin-left:auto;
 margin-right:auto;
 }
-.menu-item-card {
+.expertise-item-card {
 
   border-radius: 16px;
 }
-.menu-item-card:hover {
+.expertise-item-card:hover {
         transform: scale(1.02);
 }
 
@@ -221,8 +221,10 @@ margin-right:auto;
   width: 100%;
 }
 .expert-card .back {
-  background: #ffffff;
-  color: #0087cc;
+  background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #FFFFFF;
   line-height: 30px;
   padding: 50px 0;
   font-family: "Roboto";
@@ -233,17 +235,17 @@ margin-right:auto;
   border-radius: 6px;
 }
 /* contact me*/
-.follow-us-section {
+.contact-us-section {
   background-color: white;
 }
-.follow-us-section-heading {
+.contact-us-section-heading {
   text-align: center;
   color: #183b56;
   font-family: "Roboto";
   font-size: 28px;
   font-weight: 700;
 }
-.follow-us-icon-container {
+.contact-us-icon-container {
   background-color: #faf7e8;
   width: 80px;
   height: 80px;
@@ -254,7 +256,7 @@ margin-right:auto;
   padding-right: 16px;
   padding-left: 22px;
 }
-.follow-us-icon-container:hover {
+.contact-us-icon-container:hover {
     transform: translateY(-10px);
   }
 #icon {
@@ -272,7 +274,7 @@ margin-right:auto;
 .resume:hover{
     transform: translateY(-10px);
 }
-.follow-section-description {
+.contact-section-description {
   color: #5a7184;
   font-family: "Roboto";
   font-size: 16px;
